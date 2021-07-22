@@ -19,7 +19,7 @@ module AddressValidator
     end
 
     def build_address(attrs)
-      AddressValidator::Address.new(attrs)
+      AddressValidator::Address.new(**attrs)
     end
 
     def build_request(address)
